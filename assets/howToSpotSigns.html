@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>How To Spot The Signs</title>
+  </head>
+  <body>
+    <div class="wrapper sticky-y">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="head">
+              <h3>How To Spot The Signs</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper white-d">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h4>
+                Appearance
+              </h4>
+              <ul>
+                <li>Show signs of physical or psychological abuse and untreated injuries</li>
+                <li>Look malnourished or unkempt, or appear withdrawn and neglected</li>
+                <li>Seem under the control or influence of others</li>
+                <li>Wear the same clothes every day or no safety equipment even if their work requires it</li>
+                <li>Lack of personal belongings or official ID documents</li>
+              </ul>
+
+              <h4>
+                Work
+              </h4>
+              <ul>
+                <li>Withholding of identity documents</li>
+                <li>Lack of earnings, or withholding of wages or underpayment</li>
+                <li>Working to pay off significant debts</li>
+                <li>Abusive/ substandard working and living conditions</li>
+                <li>Excessive overtime or no time off</li>
+              </ul>
+
+              <h4>
+                Accommodation
+              </h4>
+              <ul>
+                <li>Living in dirty, cramped or overcrowded accommodation</li>
+                <li>Living and working at the same address</li>
+                <li>Appear unfamiliar with their neighbourhood or where they work</li>
+              </ul>
+
+              <h4>
+                Travel
+              </h4>
+              <ul>
+                <li>Rarely allowed to travel on their own</li>
+                <li>Collected and dropped off at irregular hours in a crowded transport with other workers</li>
+                <li>Have no control of their identification documents such as their passport</li>
+                <li>Reluctant to seek help and avoid eye contact</li>
+              </ul>
+
+              <h4>
+                Seeking Help
+              </h4>
+              <ul>
+                <li>Frightened or hesitant to talk to strangers</li>
+                <li>Fear of police, don’t know who to trust or where to get help</li>
+                <li>Afraid of deportation, and of the risk of violence to themselves or their family </li>
+              </ul><br>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="wrapper white-d">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content">
+              <h4>How to spot the signs</h4>
+              <iframe width="100%" height="300" src="https://www.youtube.com/embed/M3XHzWxN3IM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+
+    <div class="yellow-d"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      var $titleTab = $('.title_tab');
+      $('.accordion_item:eq(0)').find('.title_tab').addClass('active').next().stop().slideDown(300);
+      $('.accordion_item:eq(0)').find('.inner_content').find('p').addClass('show');
+      $titleTab.on('click', function(e) {
+      e.preventDefault();
+       //$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+
+        if ( $(this).hasClass('active') ) {
+          $(this).removeClass('active');
+          $(this).next().stop().slideUp(500);
+          $(this).next().find('p').removeClass('show');
+        } else {
+          $(this).addClass('active');
+          $(this).next().stop().slideDown(500);
+          $(this).parent().siblings().children('.title_tab').removeClass('active');
+          $(this).parent().siblings().children('.inner_content').slideUp(500);
+          $(this).parent().siblings().children('.inner_content').find('p').removeClass('show');
+          $(this).next().find('p').addClass('show');
+        }
+      });
+    </script>
+  </body>
+</html>

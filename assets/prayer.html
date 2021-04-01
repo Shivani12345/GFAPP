@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Prayers</title>
+</head>
+<body>
+
+<div class="prayer prayer-section">
+
+    <div class="wrapper sticky-w">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="head">
+                        <h3>Prayers</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper white-d-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordions">
+                        <div class="accordion_item">
+                            <div class="title_tab">
+                                <h3 class="title">A prayer for releasing<br>hidden voices</h3>
+                            </div>
+                            <div class="inner_content">
+                                <p>Written by The Rt Revd Dr Alastair Redfern, Chair of The Clewer
+                                    Initiative. </p>
+                                <p class="title">Heavenly Father,</p>
+                                <p>who sees the unseen and notices the unnoticed,</p>
+                                <p>help each of us to hear the Hidden Voices of those </p>
+                                <p>who pray for release from slavery and exploitation, </p>
+                                <p>so that we may give ourselves more fully to the service of your
+                                    saving love, </p>
+                                <p>and be strengthened together as agents of your healing and
+                                    hope, </p>
+                                <p>through Jesus Christ, </p>
+                                <p>who himself came to serve as a slave,</p>
+                                <p>so as to bring freedom and grace to all.</p>
+                                <p>Amen</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion_item">
+                            <div class="title_tab">
+                                <h3 class="title">A post communion prayer</h3>
+                            </div>
+                            <div class="inner_content">
+                                <p>Written by Revd Gemma Sampson, Diocese of Durham. </p>
+                                <p class="title">Father God</p>
+                                <p>May we who have been strengthened by this sacrament, strengthen
+                                    those in weakness</p>
+                                <p>We who have been fed, feed those in hunger</p>
+                                <p>We who have been welcomed, welcome others</p>
+                                <p>We who have been seen and known, see and know the needs of
+                                    others</p>
+                                <p>Give us your grace to respond always in loving service</p>
+                                <p>Through Jesus Christ our Lord</p>
+                                <p>Amen.</p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="title_tab">
+                                <h3 class="title">A prayer to end modern<br>slavery</h3>
+                            </div>
+                            <div class="inner_content">
+                                <p>
+                                    Written by the Rt Revd Simon Burton-Jones, the Bishop of
+                                    Tonbridge.
+                                </p>
+                                <p class="title">Lord, you are a God who sets the captives free.</p>
+                                <p>Your Spirit searches restlessly for those in despair, that they
+                                    may find the life you are calling them to.</p>
+                                <p>We pray for those who are being trafficked and callously put to
+                                    work in our region.</p>
+                                <p>On the cross, you were powerless and subject to the cruelty of
+                                    others. Look with mercy on those who suffer this way.</p>
+                                <p>May we, who are blinded by the shallow distractions of daily
+                                    life, feel the fear of the cornered and be roused to action.</p>
+                                <p>Through Jesus Christ our Lord. </p>
+                                <p>Amen.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion_item">
+                            <div class="title_tab">
+                                <h3 class="title"> A prayer for international<br>victims of modern
+                                    slavery</h3>
+                            </div>
+                            <div class="inner_content">
+                                <p>Written by the Revd Rachel Carnegie, Executive Director of the
+                                    Anglican Alliance</p>
+                                <p class="title">Loving God</p>
+                                <p>We call to you with hearts in pain for all in our world</p>
+                                <p>who suffer the horrors of modern slavery;</p>
+                                <p>for all who dream of a better life in another place </p>
+                                <p>only to be trapped, tricked and traded;</p>
+                                <p>for all those who labour, forced and unseen, to make our everyday
+                                    possessions;</p>
+                                <p>for all who agonise for loved ones lost into this trade in
+                                    humans.</p>
+                                <p>Your Son came to bring good news to the poor and freedom for the
+                                    oppressed – </p>
+                                <p>May we too be voices against oppression, channels of good
+                                    news;</p>
+                                <p>May our eyes be opened wide to all who suffer in our midst but
+                                    out of sight.</p>
+                                <p>All this we pray to you, loving God, for whom no one is
+                                    invisible.</p>
+                                <p>Amen.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper certificate-d">
+    <div class="container">
+        <div class="col-12">
+            <img src="images/prayer.jpg" class="img-fluid w-100">
+        </div>
+    </div>
+</div>
+
+
+<div class="blue-d"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+      var $titleTab = $('.title_tab');
+      // $('.accordion_item:eq(0)').find('.title_tab').addClass('active').next().stop().slideDown(300);
+      // $('.accordion_item:eq(0)').find('.inner_content').find('p').addClass('show');
+      $titleTab.on('click', function(e) {
+      e.preventDefault();
+       //$('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+       
+        if ( $(this).hasClass('active') ) {
+          $(this).removeClass('active');
+          $(this).next().stop().slideUp(500);
+          $(this).next().find('p').removeClass('show');
+        } else {
+          $(this).addClass('active');
+          $(this).next().stop().slideDown(500);
+          $(this).parent().siblings().children('.title_tab').removeClass('active');
+          $(this).parent().siblings().children('.inner_content').slideUp(500);
+          $(this).parent().siblings().children('.inner_content').find('p').removeClass('show');
+          $(this).next().find('p').addClass('show');
+        }
+      });  
+
+</script>
+
+</body>
+</html>
